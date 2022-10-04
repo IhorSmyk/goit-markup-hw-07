@@ -1,19 +1,10 @@
-/* :root {
-  --background-color1: #ffffff;
-  --background-color2: #f5f4fa;
-  --background-color3: #2f303a;
-  --foreground-color1: #212121;
-  --foreground-color2: #757575;
-  --foreground-color3: #ffffff;
-  --button: #188ce8;
-  --hoverfocus-color: #2196f3;
-  --logo-color: #afb1b8;
-  --social-links-background-color: rgba(255, 255, 255, 0.1);
-  --overlay: rgba(33, 150, 243, 0.9);
-  --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
+body {
+  background-color: var(--background-color1);
+  color: var(--foreground-color1);
+  font-family: Roboto, sans-serif;
+}
 
-/* h1,
+h1,
 h2,
 h3,
 h4,
@@ -45,41 +36,54 @@ img {
 
 address {
   font-style: normal;
-} */
-
-/* body {
-  background-color: var(--background-color1);
-  color: var(--foreground-color1);
-  font-family: Roboto, sans-serif;
 }
- */
-/* .visually-hidden {
+
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
-  padding: 0;
-  overflow: hidden;
   border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
-} */
+  overflow: hidden;
+}
 
-/* .section {
+:root {
+  --background-color1: #ffffff;
+  --background-color2: #f5f4fa;
+  --background-color3: #2f303a;
+  --foreground-color1: #212121;
+  --foreground-color2: #757575;
+  --foreground-color3: #ffffff;
+  --button: #188ce8;
+  --hoverfocus-color: #2196f3;
+  --logo-color: #afb1b8;
+  --social-links-background-color: rgba(255, 255, 255, 0.1);
+  --overlay: rgba(33, 150, 243, 0.9);
+  --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
-} */
+}
 
-/* .container {
+.container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-} */
+}
 
-/*----------header----------*/
+.header {
+  background-color: var(--background-color1);
+}
 
-/* .page-header,
+.page-header,
 .page-navigation,
 .contacts-nav {
   display: flex;
@@ -101,14 +105,12 @@ address {
 
 .header .logo {
   color: #000000;
-
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
-
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -154,7 +156,7 @@ address {
 
 .header .current::after {
   background: var(--hoverfocus-color);
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   width: 100%;
@@ -184,11 +186,9 @@ address {
 .header .link:hover,
 .header .link:focus {
   color: var(--hoverfocus-color);
-} */
+}
 
-/*----------footer----------*/
-
-/* .footer {
+.footer {
   background-color: var(--background-color3);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -201,7 +201,7 @@ address {
 
 .footer .logo {
   color: var(--foreground-color3);
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -232,7 +232,7 @@ address {
 }
 
 .footer-link-contact {
-  color: rgb(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-link-map:hover,
@@ -242,6 +242,7 @@ address {
   color: var(--hoverfocus-color);
 }
 
+/*--------socials---------*/
 .our-socials {
   display: flex;
   flex-direction: column;
@@ -284,7 +285,7 @@ address {
   background: var(--hoverfocus-color);
 }
 
-/
+/*--------subscription---------*/
 .subscription {
   margin-left: auto;
 }
@@ -298,13 +299,12 @@ address {
 .subscription-input {
   width: 358px;
   height: 50px;
-
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding-left: 16px;
   padding-right: 16px;
-  transition:  outline var(--transition-dur-and-func);
+  transition: outline var(--transition-dur-and-func);
 }
 
 .subscription-input:focus {
@@ -335,10 +335,8 @@ address {
 .subscription-btn:focus,
 .subscription-btn:hover {
   background-color: var(--hoverfocus-color);
-} */
+}
 
-/*----------backdrop----------*/
-/* 
 .backdrop {
   position: fixed;
   top: 0;
@@ -354,11 +352,9 @@ address {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-} */
+}
 
-/*-------modal registration window-------*/
-
-/* .modal {
+.modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -366,8 +362,7 @@ address {
   border-radius: 4px;
   background-color: var(--background-color1);
   transform: translate(-50%, -50%);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   padding: 40px;
 }
 
@@ -400,7 +395,6 @@ address {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-
   color: var(--foreground-color1);
 }
 
@@ -415,9 +409,7 @@ address {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
-
   letter-spacing: 0.01em;
-
   color: var(--foreground-color2);
 }
 
@@ -518,7 +510,6 @@ address {
   line-height: 1.7;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
-
   color: var(--hoverfocus-color);
 }
 
@@ -545,4 +536,4 @@ address {
 .modal-form-btn:hover,
 .modal-form-btn:focus {
   background-color: var(--hoverfocus-color);
-} */
+}/*# sourceMappingURL=main.css.map */

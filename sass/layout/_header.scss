@@ -1,0 +1,111 @@
+
+.header {
+    background-color: var(--background-color1);
+}
+
+.page-header,
+.page-navigation,
+.contacts-nav {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav {
+    display: flex;
+    align-items: baseline;
+}
+
+.page-navigation {
+    column-gap: 94px;
+}
+
+.header {
+    background-color: var(--background-color1);
+}
+
+.header .logo {
+    color: #000000;
+
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.logo-web {
+    color: var(--hoverfocus-color);
+}
+
+.header .site-nav,
+.header .contacts-nav {
+    column-gap: 50px;
+}
+
+.header .contacts-nav {
+    margin-left: auto;
+}
+
+.connection-link {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.header-link,
+.connection-link {
+    transition: color var(--transition-dur-and-func);
+}
+
+.connection-icon {
+    fill: var(--foreground-color2);
+    transition: fill var(--transition-dur-and-func);
+}
+
+.connection-link:hover .connection-icon,
+.connection-link:focus .connection-icon {
+    fill: var(--hoverfocus-color);
+}
+
+.header .current {
+    position: relative;
+    color: var(--hoverfocus-color);
+}
+
+.header .current::after {
+    background: var(--hoverfocus-color);
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    top: 45px;
+    border-radius: 2px;
+}
+
+.site-nav .link {
+    color: var(--foreground-color1);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.contacts-nav .link {
+    color: var(--foreground-color2);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.header .link:hover,
+.header .link:focus {
+    color: var(--hoverfocus-color);
+}
