@@ -71,7 +71,7 @@
 
 /*----------features----------*/
 
-.features {
+/* .features {
   padding-bottom: 47px;
   background-color: var(--background-color1);
 }
@@ -113,11 +113,11 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
+} */
 
 /*----------about job---------*/
 
-.about-job {
+/* .about-job {
   background-color: var(--background-color1);
   padding-top: 47px;
 }
@@ -155,11 +155,11 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   padding-top: 27px;
-}
+} */
 
 /*----------our team----------*/
 
-.our-team {
+/* .our-team {
   background-color: var(--background-color2);
 }
 
@@ -230,11 +230,11 @@
   border-radius: 0px 0px 4px 4px;
   padding-top: 30px;
   padding-bottom: 30px;
-}
+} */
 
 /*----------clients----------*/
 
-.client-list {
+/* .client-list {
   display: flex;
   justify-content: center;
   column-gap: 30px;
@@ -264,4 +264,4 @@
 .client-link:hover .client-icon,
 .client-link:focus .client-icon {
   fill: var(--hoverfocus-color);
-}
+} */
