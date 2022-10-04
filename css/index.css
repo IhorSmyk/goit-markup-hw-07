@@ -1,9 +1,5 @@
-.features,
-.about-job {
-  background-color: var(--background-color1);
-}
 
-.clients .title,
+/* .clients .title,
 .about-job .title,
 .our-team .title {
   font-weight: 700;
@@ -12,10 +8,10 @@
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
-}
+} */
 
 /*------------hero-------------*/
-
+/* 
 .hero {
   background-color: var(--background-color3);
 
@@ -71,12 +67,13 @@
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--hoverfocus-color);
-}
+} */
 
 /*----------features----------*/
 
 .features {
   padding-bottom: 47px;
+  background-color: var(--background-color1);
 }
 
 .features-list {
@@ -121,6 +118,7 @@
 /*----------about job---------*/
 
 .about-job {
+  background-color: var(--background-color1);
   padding-top: 47px;
 }
 

@@ -79,6 +79,17 @@ address {
   margin-right: auto;
 }
 
+.title,
+.title,
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
 .header {
   background-color: var(--background-color1);
 }
@@ -535,5 +546,54 @@ address {
 
 .modal-form-btn:hover,
 .modal-form-btn:focus {
+  background-color: var(--hoverfocus-color);
+}
+
+.hero {
+  background-color: var(--background-color3);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/indexpics/herobackground.jpg);
+  background-size: cover;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero-title {
+  color: var(--foreground-color3);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  width: 650px;
+}
+
+.hero-button {
+  background-color: var(--button);
+  color: var(--foreground-color3);
+  font-family: inherit;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding: 10px 32px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-radius: 4px;
+  transition: background-color var(--transition-dur-and-func);
+}
+
+.hero-button:hover,
+.hero-button:focus {
   background-color: var(--hoverfocus-color);
 }/*# sourceMappingURL=main.css.map */
