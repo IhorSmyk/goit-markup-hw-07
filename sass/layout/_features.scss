@@ -25,9 +25,9 @@
 
 .features-list__title {
   font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+
+  @include font($fw: 700, $lh: 16px);
+
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -36,8 +36,8 @@
 .features-list__description {
   color: var(--foreground-color2);
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+
+  @include font();
+
   letter-spacing: 0.03em;
 }
