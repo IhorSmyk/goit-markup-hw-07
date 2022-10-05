@@ -5,14 +5,14 @@
 
 .features-list {
   display: flex;
-  column-gap: 30px;
+  justify-content: space-between;
 }
 
-.features-item {
+.features-list__item {
   flex-basis: calc((100% - 3 * 30px) / 4);
 }
 
-.features-item-wrapper {
+.features-list__wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +23,7 @@
   margin-bottom: 30px;
 }
 
-.features-item-title {
+.features-list__title {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -33,7 +33,7 @@
   margin-bottom: 10px;
 }
 
-.features-item-description {
+.features-list__description {
   color: var(--foreground-color2);
   font-style: normal;
   font-weight: 400;
