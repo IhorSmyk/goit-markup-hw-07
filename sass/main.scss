@@ -1,6 +1,7 @@
+@import "./utils/vars";
+@import "./utils/visually-hidden";
 
 @import "./base/base";
-
 
 @import "./components/section";
 @import "./components/container";
@@ -17,6 +18,4 @@
 @import "./layout/clients";
 @import "./layout/projects";
 
-@import "./utils/visually-hidden";
-@import "./utils/vars";
 

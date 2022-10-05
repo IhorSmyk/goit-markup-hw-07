@@ -1,3 +1,31 @@
+:root {
+  --background-color1: #ffffff;
+  --background-color2: #f5f4fa;
+  --background-color3: #2f303a;
+  --foreground-color1: #212121;
+  --foreground-color2: #757575;
+  --foreground-color3: #ffffff;
+  --button: #188ce8;
+  --hoverfocus-color: #2196f3;
+  --logo-color: #afb1b8;
+  --social-links-background-color: rgba(255, 255, 255, 0.1);
+  --overlay: rgba(33, 150, 243, 0.9);
+  --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 body {
   background-color: var(--background-color1);
   color: var(--foreground-color1);
@@ -862,32 +890,4 @@ address {
 .projects-item:hover .projects-item-overlay,
 .projects-item:focus .projects-item-overlay {
   transform: translateY(0%);
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-:root {
-  --background-color1: #ffffff;
-  --background-color2: #f5f4fa;
-  --background-color3: #2f303a;
-  --foreground-color1: #212121;
-  --foreground-color2: #757575;
-  --foreground-color3: #ffffff;
-  --button: #188ce8;
-  --hoverfocus-color: #2196f3;
-  --logo-color: #afb1b8;
-  --social-links-background-color: rgba(255, 255, 255, 0.1);
-  --overlay: rgba(33, 150, 243, 0.9);
-  --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }/*# sourceMappingURL=main.css.map */
