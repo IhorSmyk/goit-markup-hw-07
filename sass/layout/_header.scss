@@ -6,8 +6,8 @@
 
 .header,
 .header__navigation,
-.navigation-list,
-.contact-list {
+.navigation,
+.contact {
   display: flex;
   align-items: center;
 }
@@ -16,11 +16,11 @@
   column-gap: 94px;
 }
 
-.navigation-list {
+.navigation {
   column-gap: 52px;
 }
 
-.contact-list {
+.contact {
   column-gap: 30px;
   margin-left: auto;
 }
@@ -38,8 +38,8 @@
   }
 }
 
-.navigation-list__link,
-.contact-list__link {
+.navigation-item__link,
+.contact-item__link {
   @include font($fw: 500, $lh: 16px);
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -51,11 +51,11 @@
   }
 }
 
-.navigation-list__link {
+.navigation-item__link {
   color: var(--foreground-color1);
 }
 
-.navigation-list__link_current {
+.navigation-item__link_current {
   position: relative;
   color: var(--hoverfocus-color);
 
@@ -71,19 +71,19 @@
   }
 }
 
-.contact-list__link {
+.contact-item__link {
   color: var(--foreground-color2);
   display: flex;
   align-items: center;
   column-gap: 10px;
 }
 
-.contact-list__icon {
+.contact-item__icon {
   fill: var(--foreground-color2);
   transition: fill var(--transition-dur-and-func);
 
-  .contact-list__link:hover &,
-  .contact-list__link:focus & {
+  .contact-item__link:hover &,
+  .contact-item__link:focus & {
     fill: var(--hoverfocus-color);
   }
 }
