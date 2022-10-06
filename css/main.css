@@ -416,21 +416,21 @@ address {
   background-color: var(--hoverfocus-color);
 }
 
-.features {
+.features-section {
   padding-bottom: 47px;
   background-color: var(--background-color1);
 }
 
-.features-list {
+.features {
   display: flex;
   justify-content: space-between;
 }
 
-.features-list__item {
+.features-item {
   flex-basis: calc((100% - 90px) / 4);
 }
 
-.features-list__wrapper {
+.features-item__wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -441,7 +441,7 @@ address {
   margin-bottom: 30px;
 }
 
-.features-list__title {
+.features-item__title {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -451,7 +451,7 @@ address {
   margin-bottom: 10px;
 }
 
-.features-list__description {
+.features-item__description {
   color: var(--foreground-color2);
   font-style: normal;
   font-weight: 400;
